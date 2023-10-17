@@ -33,7 +33,7 @@ public class Solution
 		{
 			int parentNode = Find(parent);
 			int childParent = Find(child);
-			if (childParent != child && parentNode == childParent)
+			if (childParent != child || parentNode == childParent)
 			{
 				return false;
 			}
